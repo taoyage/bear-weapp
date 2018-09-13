@@ -1,0 +1,20 @@
+<!-- pages/index/index.wxml -->
+<view class="container">
+  <view class="header">
+    
+  </view>
+
+  <block wx:for="{{list}}" wx:for-item="group" wx:key="title">
+    <view class="nav">
+      <view class="title">{{group.groupName}}</view>
+      <view class="list">
+        <block wx:for="{{group.list}}" wx:key="title">
+          <view class="item">
+            <text>{{item.title}}</text>
+            <view> > </view>
+          </view>
+        </block>
+      </view>
+    </view>
+  </block>
+</view>

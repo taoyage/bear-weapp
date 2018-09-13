@@ -30,7 +30,7 @@ gulp.task('compile-wxml', () => {
 })
 
 gulp.task('auto', () => {
-  gulp.watch('../src/**/*.less', ['compile-css']);
+  gulp.watch('../src/**/*.scss', ['compile-css']);
   gulp.watch('../src/**/*.js', ['compile-js']);
   gulp.watch('../src/**/*.json', ['compile-json']);
   gulp.watch('../src/**/*.wxml', ['compile-wxml']);

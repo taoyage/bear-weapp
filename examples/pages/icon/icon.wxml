@@ -1,0 +1,7 @@
+<!-- pages/icon/icon.wxml -->
+<view class="container">
+  <view class="icon-item" wx:for="{{list}}" wx:key="{{item}}">
+    <b-icon name="{{item}}" size="28" color="#80848f" />
+    <text>{{item}}</text>
+  </view>
+</view>
