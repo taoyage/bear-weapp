@@ -1,0 +1,3 @@
+<view class="{{ border ? 'group-line' : '' }}">
+  <slot />
+</view>

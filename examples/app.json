@@ -1,13 +1,15 @@
 {
-	"pages": [
-		"pages/index/index",
-		"pages/icon/icon"
-	],
-	"window": {
+  "pages": [
+    "pages/index/index",
+    "pages/icon/icon",
+    "pages/list/list",
+    "pages/countdown/countdown"
+  ],
+  "window": {
     "navigationBarBackgroundColor": "#f8f8f8",
     "navigationBarTitleText": "Bear Weapp",
-		"navigationBarTextStyle": "black",
-		"backgroundTextStyle": "dark",
-		"backgroundColor": "#f8f8f8"
-	}
+    "navigationBarTextStyle": "black",
+    "backgroundTextStyle": "dark",
+    "backgroundColor": "#f8f8f8"
+  }
 }

@@ -1,0 +1,17 @@
+<view class="custom-class b-cell {{border?'b-hairline':''}} {{isLink?'b-cell-click':''}}" bind:tap="onTap">
+  <view class="b-cell-icon">
+    <b-icon wx:if="{{icon}}" name="{{icon}}" size="16"/>
+    <slot name="icon" />
+  </view>
+  <view class="b-cell-content">
+    <view wx:if="{{title}}" class="b-cell-text">{{title}}</view>
+    <view wx:if="{{label}}" class="b-cell-desc">{{label}}</view>
+  </view>
+  <view catch:tap="navigateTo" class="b-cell-right">
+    <block wx:if="{{value}}">{{value}}</block>
+    <view class="b-cell-enter">
+      <b-icon wx:if="{{isLink}}" name="enter" color="#999" size="16" />
+      <slot wx:else name="right-icon" />
+    </view>
+  </view>
+</view>

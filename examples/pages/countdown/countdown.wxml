@@ -1,0 +1,23 @@
+<!-- pages/countdown/countdown.wxml -->
+<view class="container">
+  <view class="item">
+    <text class="title">基本使用</text>
+    <b-countdown countdown="{{20000}}" />
+  </view>
+  <view class="item">
+    <text class="title">自定义格式</text>
+    <b-countdown countdown="{{1000}}" format="d天hh:mm:ss" />
+  </view>
+  <view class="item">
+    <text class="title">自定义格式2</text>
+    <b-countdown countdown="{{10000}}" format="hh小时mm分ss秒" />
+  </view>
+  <view class="item">
+    <text class="title">自定义数字样式</text>
+    <b-countdown countdown="{{20000}}" num-class="number" />
+  </view>
+  <view class="item">
+    <text class="title">自定义所有样式</text>
+    <b-countdown countdown="{{20000}}" symbol-class="symbol" num-class="number2" />
+  </view>
+</view>

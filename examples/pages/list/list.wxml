@@ -1,0 +1,31 @@
+<!-- pages/list/list.wxml -->
+<b-block title="基础用法">
+  <b-group-cell>
+    <b-cell title="标题" />
+    <b-cell title="标题" value="内容" />
+    <b-cell title="标题" label="描述信息" value="内容" border="{{false}}" />
+  </b-group-cell>
+</b-block>
+<b-block title="带icon">
+  <b-group-cell>
+    <b-cell title="标题" value="内容" icon="like_fill" />
+    <b-cell title="标题" value="内容" border="{{false}}">
+      <b-icon name="addressbook" slot="icon" />
+    </b-cell>
+  </b-group-cell>
+</b-block>
+<b-block title="带有箭头">
+  <b-group-cell>
+    <b-cell title="显示箭头" value="内容" isLink="{{true}}" />
+    <b-cell title="点击跳转" isLink="{{true}}" url="/pages/index/index" />
+  </b-group-cell>
+</b-block>
+<b-block title="自定义">
+  <b-group-cell>
+    <b-cell title="点击跳转">
+      <b-icon name="collection_fill" slot="right-icon" size="16" />
+    </b-cell>
+    <b-cell title="缺左右标签" />
+    <b-cell title="缺左滑动" />
+  </b-group-cell>
+</b-block>

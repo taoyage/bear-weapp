@@ -1,0 +1,18 @@
+/* pages/countdown/countdown.wxss */
+.item {
+	padding: 10px 20px;
+}
+
+.title {
+	padding: 10px 0;
+}
+
+.number {
+	background: #000 !important;
+	color: #fff;
+}
+
+.number2,
+.symbol {
+	color: rgb(97, 192, 236);
+}

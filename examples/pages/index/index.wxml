@@ -1,20 +1,17 @@
 <!-- pages/index/index.wxml -->
 <view class="container">
   <view class="header">
-    
+    <text class="title">最牛逼的bear xxxx</text>
+    <text class="desc">最吊的xxxx</text>
   </view>
-
   <block wx:for="{{list}}" wx:for-item="group" wx:key="title">
-    <view class="nav">
+    <view class="panel">
       <view class="title">{{group.groupName}}</view>
-      <view class="list">
+      <b-group-cell>
         <block wx:for="{{group.list}}" wx:key="title">
-          <view class="item">
-            <text>{{item.title}}</text>
-            <view> > </view>
-          </view>
+          <b-cell is-link title="{{item.title}}" url="/pages{{item.path}}"></b-cell>
         </block>
-      </view>
+      </b-group-cell>
     </view>
   </block>
 </view>
