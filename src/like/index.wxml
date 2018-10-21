@@ -1,0 +1,7 @@
+<view class="b-like-container">
+  <view bind:tap="onLike">
+    <b-icon custom-class="like" name="like" size="{{iconSize}}" wx:if="{{!like}}" />
+    <b-icon custom-class="like-fill" name="like_fill" size="{{iconSize}}" wx:else />
+  </view>
+  <text class="count">{{count}}</text>
+</view>

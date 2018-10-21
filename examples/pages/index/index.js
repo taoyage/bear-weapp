@@ -17,10 +17,13 @@ Page({
 			list: [{
 				path: '/countdown/countdown',
 				title: '倒计时'
-			},{
-        path: '/like/like',
-        title: '点赞'
-      }]
+			}, {
+				path: '/like/like',
+				title: '点赞'
+			}, {
+				path: '/grade/grade',
+				title: '评分'
+			}]
 		}]
 	}
 })

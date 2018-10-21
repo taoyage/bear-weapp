@@ -1,0 +1,6 @@
+{
+	"component": true,
+	"usingComponents": {
+		"b-icon": "../icon/index"
+	}
+}

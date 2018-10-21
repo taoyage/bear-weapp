@@ -3,7 +3,9 @@
     "pages/index/index",
     "pages/icon/icon",
     "pages/list/list",
-    "pages/countdown/countdown"
+    "pages/countdown/countdown",
+    "pages/like/like",
+    "pages/grade/grade"
   ],
   "window": {
     "navigationBarBackgroundColor": "#f8f8f8",

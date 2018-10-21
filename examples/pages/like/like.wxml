@@ -1,0 +1,2 @@
+<!--pages/like/index.wxml-->
+<b-like iconSize="20" count="{{likeCount}}" like="{{likeStatus}}" bind:like="onLike"/>

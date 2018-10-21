@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "点赞",
+	"usingComponents": {
+		"b-like": "../../dist/like/index"
+	}
+}

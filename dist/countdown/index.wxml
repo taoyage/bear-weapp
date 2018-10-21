@@ -1,0 +1,6 @@
+<view class="b-countdown-container">
+  <view class="b-time-item" wx:for="{{timeItems}}" wx:key="index">
+    <view class="num-class">{{item.num}}</view>
+    <view class="symbol-class">{{item.symbol}}</view>
+  </view>
+</view>
