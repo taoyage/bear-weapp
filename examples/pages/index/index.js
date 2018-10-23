@@ -23,7 +23,10 @@ Page({
 			}, {
 				path: '/grade/grade',
 				title: '评分'
-			}]
+			}, {
+        path: '/tabs/tabs',
+        title: '标签栏'
+      }]
 		}]
 	}
 })

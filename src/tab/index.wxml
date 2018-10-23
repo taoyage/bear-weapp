@@ -1,0 +1,11 @@
+<view class="b-tab {{scroll?'b-tab-scroll':''}} {{ current ? 'b-tab-current' : '' }}">
+  <view class="b-tab-item">
+    <view bind:tap="onItem">
+      <view class="b-tab-title {{current?'b-tab-title-current':''}}" wx:if="{{current && currentColor}}" style="color: {{currentColor}} ">
+        {{title}}
+      </view>
+      <view class="b-tab-title {{current?'b-tab-title-current':''}}" wx:else>{{title}}</view>
+    </view>
+  </view>
+  <view class="b-tab-bar" wx:if="{{current}}" style="background: {{currentColor}}"></view>
+</view>

@@ -1,0 +1,29 @@
+<!-- pages/tabs/tabs.wxml -->
+<b-block title="基础用法">
+  <b-tabs current="{{current}}" bind:change="onChange">
+    <b-tab key="tab1" title="tab1"></b-tab>
+    <b-tab key="tab2" title="tab2"></b-tab>
+    <b-tab key="tab3" title="tab3"></b-tab>
+    <b-tab key="tab4" title="tab4"></b-tab>
+  </b-tabs>
+</b-block>
+<b-block title="自定义颜色">
+  <b-tabs current="{{current}}" color="red" bind:change="onChange">
+    <b-tab key="tab1" title="tab1"></b-tab>
+    <b-tab key="tab2" title="tab2"></b-tab>
+    <b-tab key="tab3" title="tab3"></b-tab>
+    <b-tab key="tab4" title="tab4"></b-tab>
+  </b-tabs>
+</b-block>
+<b-block title="可滚动">
+  <b-tabs current="{{currentScroll}}" scroll bind:change="onChangeScroll">
+    <b-tab key="tab1" title="tab1"></b-tab>
+    <b-tab key="tab2" title="tab2"></b-tab>
+    <b-tab key="tab3" title="tab3"></b-tab>
+    <b-tab key="tab4" title="tab4"></b-tab>
+    <b-tab key="tab5" title="tab5"></b-tab>
+    <b-tab key="tab6" title="tab6"></b-tab>
+    <b-tab key="tab7" title="tab7"></b-tab>
+    <b-tab key="tab8" title="tab8"></b-tab>
+  </b-tabs>
+</b-block>
