@@ -1,0 +1,12 @@
+<!--pages/button/button.wxml-->
+<b-block title="large">
+  <b-button size="large">large</b-button>
+</b-block>
+
+<b-block title="medium">
+  <b-button>medium</b-button>
+</b-block>
+
+<b-block title="small">
+  <b-button size="small">small</b-button>
+</b-block>

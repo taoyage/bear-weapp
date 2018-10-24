@@ -29,3 +29,12 @@
     <b-cell title="缺左滑动" />
   </b-group-cell>
 </b-block>
+
+<b-block title="使用插槽">
+  <b-group-cell>
+    <b-cell title="标题" useSlot>
+      <view class="btn">btn1</view>
+      <view class="btn">btn2</view>
+    </b-cell>
+  </b-group-cell>
+</b-block>

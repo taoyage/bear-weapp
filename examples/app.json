@@ -6,7 +6,10 @@
     "pages/countdown/countdown",
     "pages/like/like",
     "pages/grade/grade",
-    "pages/tabs/tabs"
+    "pages/tabs/tabs",
+    "pages/panel/panel",
+    "pages/button/button",
+    "pages/card/card"
   ],
   "window": {
     "navigationBarBackgroundColor": "#f8f8f8",

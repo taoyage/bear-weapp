@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "b-button": "../../dist/button/index",
+    "b-block": "../../components/block/index"
+  }
+}

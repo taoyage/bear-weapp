@@ -1,0 +1,6 @@
+{
+  "usingComponents":{
+    "b-card": "../../dist/card/index",
+    "b-block": "../../components/block/index"
+  }
+}

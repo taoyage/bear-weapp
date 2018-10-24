@@ -15,7 +15,9 @@ Component({
 		// 标题下方描述
 		label: String,
 		// 是否展示url
-		isLink: Boolean,
+    isLink: Boolean,
+    // 是否使用插槽
+    useSlot: Boolean,
 		// 链接跳转方式
 		linkType: {
 			type: String,
@@ -29,7 +31,6 @@ Component({
 	},
 	methods: {
 		onTap() {
-      console.log('click');
 			const { url } = this.data;
 			url && wx[this.data.linkType]({ url });
 			this.triggerEvent('clike');

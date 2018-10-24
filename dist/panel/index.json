@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "b-cell": "../cell/index",
+    "b-group-cell": "../group-cell/index"
+  }
+}

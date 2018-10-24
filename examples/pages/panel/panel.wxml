@@ -1,0 +1,36 @@
+<!-- pages/panel/panel.wxml -->
+
+<b-block title="基本用法">
+  <b-panel title="name">
+    <view slot="content" class="b-content-class">
+      <view>电话：13868844629</view>
+      <view>收货地址：浙江省温州市</view>
+    </view>
+  </b-panel>
+</b-block>
+
+<b-block title="有footer">
+  <b-panel title="name" label="描述" useFooter>
+    <view slot="content" class="b-content-class">
+      <view>电话：13868844629</view>
+      <view>收货地址：浙江省温州市</view>
+    </view>
+    <view slot="footer" class="b-footer-class">
+      <view class="btn">btn1</view>
+      <view class="btn">btn2</view>
+    </view>
+  </b-panel>
+</b-block>
+
+<b-block title="使用header插槽">
+  <b-panel title="name" label="描述" useHeaderSlot>
+    <view slot="header">
+      <view class="btn">btn1</view>
+      <view class="btn">btn2</view>
+    </view>
+    <view slot="content" class="b-content-class">
+      <view>电话：13868844629</view>
+      <view>收货地址：浙江省温州市</view>
+    </view>
+  </b-panel>
+</b-block>

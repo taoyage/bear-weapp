@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "面板",
+  "usingComponents":{
+    "b-block": "../../components/block/index",
+    "b-panel": "../../dist/panel/index"
+  }
+}

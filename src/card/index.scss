@@ -1,0 +1,31 @@
+.b-card {
+  display: flex;
+  flex-direction: column;
+  &-content {
+    display: flex;
+    &-title {
+      flex: 1;
+      font-size: 24rpx;
+      color: #101010;
+      font-weight: blod;
+      margin-top: 10rpx;
+      margin-bottom: 5rpx;
+    }
+  }
+  &-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-price {
+      font-family: DIN;
+      font-weight: bold;
+      color: #121326;
+      font-size: 28rpx;
+    }
+    &-number {
+      font-size: 20rpx;
+      color: #ababab;
+      font-family: PingFangSC-Light;
+    }
+  }
+}

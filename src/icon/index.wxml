@@ -1,1 +1,1 @@
-<view class="custom-class b-icon b-icon-{{name}}" style="{{color?'color:'+color : ''}}; font-size: {{size}}px"></view>
+<view class="b-class b-icon b-icon-{{name}}" style="{{color?'color:'+color : ''}}; font-size: {{size}}px"></view>

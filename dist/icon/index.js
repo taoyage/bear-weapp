@@ -1,9 +1,5 @@
 Component({
-	// options: {
-	// 	addGlobalClass: true
-	// },
-
-	externalClasses: ['custom-class'],
+	externalClasses: ['b-class'],
 
 	properties: {
 		name: String,

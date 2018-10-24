@@ -1,0 +1,11 @@
+<view class="b-card" style="width:{{width}}">
+  <image src="{{img}}" height="{{height}}" style="width:{{width}}" mode="widthFix" />
+  <view class="b-card-content">
+    <text class="b-card-content-title">{{title}}</text>
+    <slot />
+  </view>
+  <view class="b-card-info">
+    <text class="b-card-info-price">{{price}}</text>
+    <text class="b-card-info-number">{{volume}}</text>
+  </view>
+</view>

@@ -1,4 +1,14 @@
-/* pages/list/list.wxss */
+/* pages/panel/panel.wxss */
+
+.b-content-class {
+  font-size: 12px;
+  line-height: 20px;
+  color: #80848f;
+}
+
+.b-footer-class {
+  text-align: right;
+}
 
 .btn {
   display: inline-block;

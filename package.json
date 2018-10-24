@@ -1,8 +1,8 @@
 {
 	"name": "bear-weapp",
-	"version": "1.0.2",
-  "description": "小程序组件",
-  "miniprogram": "dist",
+	"version": "1.0.8",
+	"description": "小程序组件",
+	"miniprogram": "dist",
 	"main": "app.js",
 	"scripts": {
 		"dev": "gulp --gulpfile build/build-dev.js",
@@ -11,10 +11,10 @@
 	"repository": {
 		"type": "git",
 		"url": "git+ssh://git@github.com/taoyage/bear-weapp.git"
-  },
-  "files": [
-    "dist"
-  ],
+	},
+	"files": [
+		"dist"
+	],
 	"keywords": [
 		"component"
 	],
@@ -24,7 +24,7 @@
 		"url": "https://github.com/taoyage/bear-weapp/issues"
 	},
 	"homepage": "https://github.com/taoyage/bear-weapp#readme",
-	"dependencies": {
+	"devDependencies": {
 		"gulp": "^3.9.1",
 		"gulp-clean-css": "^3.10.0",
 		"gulp-rename": "^1.4.0",
