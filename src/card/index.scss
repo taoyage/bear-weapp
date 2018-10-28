@@ -1,6 +1,9 @@
 .b-card {
   display: flex;
   flex-direction: column;
+  &-image {
+    vertical-align: middle;
+  }
   &-content {
     display: flex;
     &-title {
@@ -10,6 +13,11 @@
       font-weight: blod;
       margin-top: 10rpx;
       margin-bottom: 5rpx;
+    }
+    &-ellipsis {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
     }
   }
   &-info {

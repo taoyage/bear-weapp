@@ -1,0 +1,3 @@
+<view class="b-steps-class b-steps">
+  <slot></slot>
+</view>

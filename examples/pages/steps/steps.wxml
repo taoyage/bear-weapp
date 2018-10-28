@@ -1,0 +1,8 @@
+<!--pages/steps/steps.wxml-->
+<b-steps current="{{current}}">
+  <b-step status="finish" title="Finished" content="This is description"></b-step>
+  <b-step status="process" title="In Progress" content="This is description"></b-step>
+  <b-step status="wait" title="Waiting" content="This is description"></b-step>
+</b-steps>
+
+<view class="button" bind:tap="onStep">下一步</view>

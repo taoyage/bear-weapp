@@ -35,6 +35,9 @@ Page({
       }, {
           path: '/card/card',
         title: '卡片'
+      },{
+        path: '/steps/steps',
+        title: '步骤条'
       }]
     }]
   }

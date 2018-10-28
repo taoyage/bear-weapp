@@ -5,6 +5,8 @@ Component({
     price: String,
     height: String,
     width: String,
-    volume: String
-  }
+    volume: String,
+    titleEllipsis: Boolean
+  },
+  methods: {}
 });

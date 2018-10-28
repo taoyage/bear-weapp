@@ -1,7 +1,7 @@
-<view class="b-card" style="width:{{width}}">
-  <image src="{{img}}" height="{{height}}" style="width:{{width}}" mode="widthFix" />
+<view class="b-card" style="width:{{width}}" bind:tap="emitEvent">
+  <image src="{{img}}" style="width:{{width}};height:{{height}}" mode="widthFix" class="b-card-image"/>
   <view class="b-card-content">
-    <text class="b-card-content-title">{{title}}</text>
+    <text class="b-card-content-title {{titleEllipsis ? 'b-card-content-ellipsis' : ''}}">{{title}}</text>
     <slot />
   </view>
   <view class="b-card-info">

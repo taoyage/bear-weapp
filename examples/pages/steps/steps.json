@@ -1,0 +1,6 @@
+{
+  "usingComponents":{
+    "b-steps": "../../dist/steps/index",
+    "b-step": "../../dist/step/index"
+  }
+}

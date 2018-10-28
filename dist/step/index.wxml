@@ -1,0 +1,74 @@
+<view class="b-step-class b-step-item {{tools.getClass(status,current,index)}} {{direction==='vertical'?'b-step-vertical':'b-step-horizontal'}}" style="{{tools.getItemStyle(length,direction)}}">
+  <view class="b-step-item-icon">
+    <view class="b-step-icon" wx:if="{{!tools.hasIcon(status,current,index,icon)}}">
+      {{index+1}}
+    </view>
+    <view class="b-step-icon" wx:else>
+      <b-icon b-class="b-step-icon-in" name="{{tools.getIconName(status,icon)}}" />
+    </view>
+    <view class="b-step-line" wx:if="{{index !== length-1}}"></view>
+  </view>
+  <view class="b-step-item-main">
+    <view class="b-step-item-title" wx:if="{{title !== ''}}">{{title}}</view>
+    <view class="b-step-item-title" wx:else>
+      <slot name="title"></slot>
+    </view>
+    <view class="i-step-item-content" wx:if="{{content !== ''}}">{{content}}</view>
+    <view class="i-step-item-content" wx:else>
+      <slot name="content"></slot>
+    </view>
+  </view>
+</view>
+<wxs module="tools">
+  var status = ['wait','process','finish','error'];
+  var hasIcon = function(status,current,index,icon){
+    if(index < current || icon !== ''){
+      return true;
+    }
+    return false;
+  }
+
+  var getIconName = function(status,icon){
+    var name = '';
+    if(status === 'error'){
+      name = 'close';
+    }else{
+      name = 'right';
+    }
+    if(icon!==''){
+      name = icon;
+    }
+    return name;
+  }
+
+  var getClass = function(status,current,index){
+    var startClass = 'b-step-';
+    var classes = '';
+    var cindex = status.indexOf(status);
+    if(cindex !== -1){
+      classes = startClass + status[cindex];
+    }
+    if(index < current){
+      classes = startClass + 'finish';
+    }else if(index === current){
+      classes = startClass + 'process';
+    }
+    return classes;
+  }
+
+  var getItemStyle = function(len,direction){
+    if( direction === 'horizontal' ){
+        return 'width :'+100/len + '%';
+    }else{
+        return 'width : 100%;';
+    }
+  }
+
+
+  module.exports = {
+    hasIcon: hasIcon,
+    getIconName: getIconName,
+    getClass: getClass,
+    getItemStyle: getItemStyle
+  }
+</wxs>

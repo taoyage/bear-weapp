@@ -1,0 +1,120 @@
+.b-step {
+  &-icon {
+    width: 24px;
+    height: 100%;
+    border-radius: 100%;
+    background: #fff;
+    position: relative;
+    z-index: 2;
+    margin: 0 auto;
+    border: 1px solid #dddee1;
+    box-sizing: border-box;
+    font-size: 12px;
+
+    &-in {
+      vertical-align: baseline;
+    }
+  }
+  &-line {
+    position: absolute;
+    left: 50%;
+    top: 12px;
+    width: 100%;
+    height: 1px;
+    background: #dddee1;
+  }
+  &-horizontal {
+    .b-step-icon::after {
+      position: absolute;
+      top: 11px;
+      left: 23px;
+      z-index: 1;
+      content: '';
+      height: 1px;
+      background: #fff;
+      width: 10px;
+    }
+    .b-step-item-main {
+      text-align: center;
+    }
+    .b-step-icon::before {
+      position: absolute;
+      top: 11px;
+      left: -11px;
+      z-index: 1;
+      content: '';
+      height: 1px;
+      background: #fff;
+      width: 10px;
+    }
+  }
+
+
+  &-process {
+    .b-step-icon {
+      border: #2d8cf0 solid 1px;
+      color: #fff;
+      background: #2d8cf0;
+    }
+    .b-step-line {
+      // background: #2d8cf0;
+    }
+  }
+  &-wait {
+    .b-step-icon{
+      border: #e9eaec solid 1px;
+      color: #e9eaec;
+    }
+    .b-step-line {
+      background: #2d8cf0;
+    }
+  }
+  &-finish {
+    .b-step-icon {
+      border: #2d8cf0 solid 1px;
+      color: #2d8cf0;
+    }
+    .b-step-line {
+      background: #2d8cf0;
+    }
+  }
+  &-error {
+    .b-step-icon {
+      border: #ed3f14 solid 1px;
+      color: #ed3f14;
+    }
+    .b-step-line {
+      background: #ed3f14;
+    }
+  }
+
+  &-item {
+    font-size: 12px;
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    padding-left: 10px;
+    vertical-align: top;
+    &-icon {
+      width: 100%;
+      height: 24px;
+      line-height: 24px;
+      text-align: center;
+    }
+    &-main {
+      margin-top: 10px;
+      clear: both;
+    }
+    &-title {
+      font-size: 14px;
+      font-weight: bold;
+      color: #1c2438;
+    }
+    &-content {
+      font-size: 12px;
+      font-weight: bold;
+      margin-top: 2px;
+      color: #80848f;
+    }
+  }
+}

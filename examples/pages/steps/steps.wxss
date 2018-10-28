@@ -1,0 +1,14 @@
+/* pages/steps/steps.wxss */
+
+.button {
+  border: 1px solid #000;
+  width: 200rpx;
+  height: 50rpx;
+  font-size: 14px;
+  text-align: center;
+  line-height: 50rpx;
+  padding: 0;
+  background: #000;
+  color: #fff;
+  border-radius: 3px;
+}

@@ -1,4 +1,4 @@
 <!--pages/cart/cart.wxml-->
 <b-block title="基础用法">
-  <b-card img="/images/card.jpg" title="贝尔是明星猫" width="240rpx" price="¥199" volume="210购买" />
+  <b-card img="/images/card.jpg" title="贝尔是明星猫贝尔是明星猫" width="240rpx" price="¥199" volume="210购买" bind:navigator="navigator" id="1"/>
 </b-block>
