@@ -1,0 +1,8 @@
+/* pages/badge/badge.wxss */
+.container {
+  margin: 10px;
+}
+
+image {
+  width: 80rpx;
+}

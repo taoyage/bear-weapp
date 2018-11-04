@@ -1,0 +1,29 @@
+.b-badge {
+  position: relative;
+  display: inline-block;
+  line-height: 1;
+  vertical-align: middle;
+
+  &-count {
+    position: absolute;
+    transform: translateX(50%);
+    top: -6px;
+    right: 0;
+    height: 18px;
+    border-radius: 9px;
+    min-width: 18px;
+    background: #ed3f14;
+    border: 1px solid transparent;
+    color: #fff;
+    line-height: 18px;
+    text-align: center;
+    padding: 0 5px;
+    font-size: 12px;
+    white-space: nowrap;
+    transform-origin: -10% center;
+    z-index: 10;
+    box-shadow: 0 0 0 1px #fff;
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+  }
+}

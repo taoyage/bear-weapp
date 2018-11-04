@@ -1,0 +1,4 @@
+<view class="b-class b-badge">
+  <slot></slot>
+  <view class="b-badge-count b-class-count" wx:if="{{count!==0}}">{{finalCount}}</view>
+</view>

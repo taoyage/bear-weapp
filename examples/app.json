@@ -10,7 +10,8 @@
     "pages/panel/panel",
     "pages/button/button",
     "pages/card/card",
-    "pages/steps/steps"
+    "pages/steps/steps",
+    "pages/badge/badge"
   ],
   "window": {
     "navigationBarBackgroundColor": "#f8f8f8",

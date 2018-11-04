@@ -17,6 +17,9 @@ Page({
       }, {
         path: '/button/button',
         title: '按钮'
+      },{
+        path: '/badge/badge',
+        title: '徽章'
       }],
     }, {
       groupName: '业务组件',

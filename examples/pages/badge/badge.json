@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "b-badge": "../../dist/badge/index",
+    "b-block": "../../components/block/index"
+  }
+}

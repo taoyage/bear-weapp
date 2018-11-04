@@ -1,0 +1,18 @@
+<!-- pages/badge/badge.wxml -->
+<view class="container">
+  <b-block title="基本使用">
+    <b-badge count="10">
+      <image src="/images/cart.png" mode="widthFix" />
+    </b-badge>
+  </b-block>
+  <b-block title="默认overflowCount为99">
+    <b-badge count="100">
+      <image src="/images/cart.png" mode="widthFix" />
+    </b-badge>
+  </b-block>
+  <b-block title="自定义overflowCount">
+    <b-badge count="999" overflowCount="1000">
+      <image src="/images/cart.png" mode="widthFix" />
+    </b-badge>
+  </b-block>
+</view>

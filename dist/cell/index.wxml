@@ -4,12 +4,12 @@
     <slot name="icon" />
   </view>
   <view class="b-cell-content">
-    <view wx:if="{{title}}" class="b-cell-text">{{title}}</view>
+    <view wx:if="{{title}}" class="title-custom-class b-cell-text">{{title}}</view>
     <view wx:if="{{label}}" class="b-cell-desc">{{label}}</view>
   </view>
-  <view catch:tap="navigateTo" class="b-cell-right">
-    <slot wx:if="useSlot" />
-    <block wx:if="{{value}}">{{value}}</block>
+  <view class="b-cell-right">
+    <slot name="footer" />
+    <view wx:if="{{value}}" class="value-custom-class">{{value}}</view>
     <view class="b-cell-enter">
       <b-icon wx:if="{{isLink}}" name="enter" color="#999" size="16" />
       <slot wx:else name="right-icon" />

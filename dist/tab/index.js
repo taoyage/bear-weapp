@@ -39,7 +39,6 @@ Component({
      * @param {*} scroll 
      */
     changeScroll(scroll) {
-      console.log(scroll);
       this.setData({ scroll });
     },
     onItem() {

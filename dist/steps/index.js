@@ -1,5 +1,5 @@
 Component({
-  externalClass: ['b-steps-class'],
+  externalClasses: ['b-steps-class'],
   properties: {
     current: {
       type: Number,
