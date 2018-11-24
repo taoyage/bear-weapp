@@ -1,4 +1,10 @@
-<scroll-view scroll-with-animation wx:if="{{scroll}}" scroll-x="true" class="b-class b-tabs b-tabs-scroll {{fixed ? 'b-tabs-fixed': ''}}">
+<scroll-view 
+  scroll-with-animation 
+  wx:if="{{scroll}}" 
+  scroll-x="true" 
+  class="b-class b-tabs b-tabs-scroll {{fixed ? 'b-tabs-fixed': ''}}"
+  scroll-left="{{ scrollLeft }}"
+>
   <slot></slot>
 </scroll-view>
 <view wx:else class="b-class b-tabs {{fixed ? 'b-tabs-fixed':''}}">

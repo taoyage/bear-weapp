@@ -1,6 +1,8 @@
 <view class="b-panel">
-  <b-cell title="{{title}}" label="{{label}}" wx:if="{{useHeaderSlot}}" useSlot>
-    <slot name="header"></slot>
+  <b-cell title="{{title}}" label="{{label}}" wx:if="{{useHeaderSlot}}">
+    <view slot="footer">
+      <slot name="header"></slot>
+    </view>
   </b-cell>
   <b-cell title="{{title}}" label="{{label}}" wx:else />
   <view class="b-content-class b-panel-content">

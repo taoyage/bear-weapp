@@ -28,6 +28,13 @@ Component({
       value: false
     }
   },
+  data: {
+    scrollLeft: '0rpx'
+  },
+  ready() {
+    this.scrollIntoView();
+  },
+
   methods: {
     changeCurrent(val = this.properties.current) {
       let items = this.getRelationNodes('../tab/index');
@@ -37,6 +44,33 @@ Component({
           item.changeScroll(this.properties.scroll);
           item.changeCurrent(item.data.key === val);
           item.changeCurrentColor(this.properties.color);
+        });
+        this.scrollIntoView();
+      }
+    },
+    scrollIntoView() {
+      if (!this.properties.scroll) {
+        return;
+      }
+      let items = this.getRelationNodes('../tab/index');
+      const len = items.length;
+      if (len > 0) {
+        items.forEach((item, index) => {
+          const childQuery = wx.createSelectorQuery().in(item);
+          const parentQuery = wx.createSelectorQuery().in(this);
+          childQuery.select('.b-tab').boundingClientRect(tabRect=> {
+            if(tabRect) {
+              if(item.properties.current) {
+                let activeRectLeft = tabRect.left;
+                let activeRectWith = tabRect.width;
+                parentQuery.select('.b-tabs').boundingClientRect(tabsRect=>{
+                  this.setData({
+                    scrollLeft: activeRectLeft + activeRectWith - tabsRect.width / 2
+                  })
+                }).exec();
+              }
+            }
+          }).exec();
         });
       }
     },

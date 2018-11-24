@@ -22,21 +22,21 @@ Component({
   methods: {
     /**
      * 从父组件传递过来的当前选中的tab
-     * @param {*} current 
+     * @param {*} current
      */
     changeCurrent(current) {
       this.setData({ current });
     },
     /**
      * 从父组件传递过来的color
-     * @param {*} currentColor 
+     * @param {*} currentColor
      */
     changeCurrentColor(currentColor) {
       this.setData({ currentColor });
     },
     /**
      * 从父组件传递过来是否启用横向滚动
-     * @param {*} scroll 
+     * @param {*} scroll
      */
     changeScroll(scroll) {
       this.setData({ scroll });

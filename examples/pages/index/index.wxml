@@ -1,8 +1,8 @@
 <!-- pages/index/index.wxml -->
 <view class="container">
   <view class="header">
-    <text class="title">最牛逼的bear xxxx</text>
-    <text class="desc">最吊的xxxx</text>
+    <text class="title">bear-weapp</text>
+    <text class="desc">持续维护，会开发一些针对业务型的组件</text>
   </view>
   <block wx:for="{{list}}" wx:for-item="group" wx:key="title">
     <view class="panel">

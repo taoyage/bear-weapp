@@ -1,6 +1,6 @@
 {
 	"name": "bear-weapp",
-	"version": "v1.2.1",
+	"version": "v1.2.4",
 	"description": "小程序组件",
 	"miniprogram": "dist",
 	"main": "app.js",
